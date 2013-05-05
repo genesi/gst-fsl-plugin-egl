@@ -1,0 +1,2 @@
+usr/include/gstreamer-0.10/gst/gl/*.h 
+usr/lib/pkgconfig/*.pc

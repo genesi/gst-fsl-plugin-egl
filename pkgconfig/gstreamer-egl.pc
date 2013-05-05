@@ -1,0 +1,13 @@
+prefix=/usr
+exec_prefix=${prefix}
+libdir=${exec_prefix}/lib
+includedir=${prefix}/include/gstreamer-0.10
+pluginsdir=${exec_prefix}/lib/gstreamer-0.10
+
+Name: GStreamer OpenGL Plugins Libraries
+Description: Streaming media framework, OpenGL plugins libraries
+Requires: gstreamer-0.10 gstreamer-base-0.10
+Version: 0.10.2
+Libs: -L${libdir} -lgstegl-0.10
+Cflags: -I${includedir}
+

@@ -1,0 +1,28 @@
+Source: gst-fsl-plugin-egl
+Priority: extra
+Maintainer: Sario Hu <b01138@freescale.com>
+Build-Depends: debhelper (>= 7), autotools-dev, libpng12-dev, libgst-fsl-plugins-dev, libgstreamer0.10-dev, libgstreamer-plugins-base0.10-dev
+Standards-Version: 3.8.0
+Section: libs
+Homepage: http://www.freescale.com
+
+Package: gstreamer0.10-fsl-mm-plugin-egl
+Section: video
+Architecture: armel
+Depends: ${shlibs:Depends}
+Description: Freescale Multimedia Gstreamer Plugin libraries.
+ Freescale Multimedia Gstreamer Plugin libraries.
+ 
+Package: libgst-fsl-plugin-egl0
+Section: libs
+Architecture: armel
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: Freescale Multimedia Gstreamer Plugin libraries.
+ This is the library for development Freescale Multimedia Gstreamer Plugin.
+ 
+Package: libgst-fsl-plugin-egl-dev
+Section: libdevel
+Architecture: armel
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: Freescale Multimedia Gstreamer Plugin libraries.
+ This is the library for development Freescale Multimedia Gstreamer Plugin.
