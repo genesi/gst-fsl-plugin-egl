@@ -444,14 +444,14 @@ gst_gl_display_get_free_buffer(GstGLDisplay * display, GstCaps *caps, guint size
   GstStructure *s;
   gint left=0, right=0, top=0, bottom=0;
   s = gst_caps_get_structure (caps, 0);
-  gst_structure_get_int (s, "crop-left-by-pixel", &left);
-  gst_structure_get_int (s, "crop-top-by-pixel", &top);
-  gst_structure_get_int (s, "crop-right-by-pixel", &right);
-  gst_structure_get_int (s, "crop-bottom-by-pixel", &bottom);
+  gst_structure_get_int (s, "crop-left", &left);
+  gst_structure_get_int (s, "crop-top", &top);
+  gst_structure_get_int (s, "crop-right", &right);
+  gst_structure_get_int (s, "crop-bottom", &bottom);
 
   gst_video_format_parse_caps (caps, &format, &width, &height);
-  alloc_width = width + left + right;
-  alloc_height = height + top + bottom;
+  alloc_width = width;
+  alloc_height = height;
 
   GST_INFO("get free buffer format %d, width, height [%d, %d], size %d", format, width, height, size);
   if(size != -1 && gst_video_format_get_size(format, alloc_width, alloc_height) != size)

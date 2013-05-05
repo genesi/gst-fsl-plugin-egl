@@ -55,7 +55,7 @@ plugin_init (GstPlugin * plugin)
   GST_DEBUG_CATEGORY_INIT (gst_gl_gstgl_debug, "gstopengl", 0, "gstopengl");
 
   if (!gst_element_register (plugin, "eglsink",
-          GST_RANK_PRIMARY+1, GST_TYPE_EGL_SINK)) {
+          GST_RANK_PRIMARY+4, GST_TYPE_EGL_SINK)) {
     return FALSE;
   }
 
