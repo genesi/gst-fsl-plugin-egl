@@ -1,7 +1,7 @@
 Source: gst-fsl-plugin-egl
 Priority: extra
 Maintainer: Sario Hu <b01138@freescale.com>
-Build-Depends: debhelper (>= 7), autotools-dev, libpng12-dev, libgst-fsl-plugins-dev, libgstreamer0.10-dev, libgstreamer-plugins-base0.10-dev
+Build-Depends: debhelper (>= 7), autotools-dev, libpng12-dev, libgstreamer0.10-dev, libgstreamer-plugins-base0.10-dev
 Standards-Version: 3.8.0
 Section: libs
 Homepage: http://www.freescale.com
