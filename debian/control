@@ -9,7 +9,9 @@ Homepage: http://www.freescale.com
 Package: gstreamer0.10-fsl-mm-plugin-egl
 Section: video
 Architecture: armel
-Depends: ${shlibs:Depends}
+Depends: ${shlibs:Dependsi},
+ libegl1-imx-dev,
+ libgles2-imx-dev
 Description: Freescale Multimedia Gstreamer Plugin libraries.
  Freescale Multimedia Gstreamer Plugin libraries.
  
