@@ -770,8 +770,8 @@ gst_gl_display_glgen_texture (GstEGLBuffer *buffer)
   
         glEnable(target);
         glBindTexture(target, info->texture);
-        glTexParameteri (target, GL_TEXTURE_MAG_FILTER, GL_NEAREST);
-        glTexParameteri (target, GL_TEXTURE_MIN_FILTER, GL_NEAREST);
+        glTexParameteri (target, GL_TEXTURE_MAG_FILTER, GL_LINEAR);
+        glTexParameteri (target, GL_TEXTURE_MIN_FILTER, GL_LINEAR);
         glEGLImageTargetTexture2DOES(target, info->image);
         glBindTexture (target, 0);
         glDisable(target);
